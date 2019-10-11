@@ -16,23 +16,11 @@ public class NextEvent : MonoBehaviour
         Application.Quit();
     }
 
-    public void SlowSpeed()
+   public void PlayGame()
     {
-        Rotator.speed = 25f;
         SceneManager.LoadScene("MainLevel");
     }
-
-    public void MediumSpeed()
-    {
-        Rotator.speed = 75f;
-        SceneManager.LoadScene("MainLevel");
-    }
-
-    public void FastSpeed()
-    {
-        Rotator.speed = 150f;
-        SceneManager.LoadScene("MainLevel");
-    }
+    
 
     public void EndGame()
     {

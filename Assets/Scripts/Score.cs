@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     public static int PinCount;
+
     public Text text;
 
      void Start()
@@ -15,6 +16,7 @@ public class Score : MonoBehaviour
 
     void Update()
     {
+        keepData.PlayerScore = PinCount;
         text.text = PinCount.ToString();
     }
 
